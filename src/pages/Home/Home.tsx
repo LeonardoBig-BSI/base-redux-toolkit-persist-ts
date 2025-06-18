@@ -31,12 +31,6 @@ const Home = () => {
       <Header />
       <div className={styles.container}>
         <nav className={styles.nav}>
-          <Link to="/" className={styles.link}>
-            Login
-          </Link>
-          <Link to="/painel" className={styles.link}>
-            Painel
-          </Link>
           <Link to="/address" className={styles.link}>
             Meus endereços
           </Link>
@@ -67,7 +61,9 @@ const Home = () => {
             <br /><br /> <hr /> 
 
             <h2 className={styles.h2}>Lista de Usuários</h2>
-            <button onClick={handleFetchUsers} className={styles.buttonSearch} >Buscar usuários</button>
+            <button onClick={handleFetchUsers} className={styles.buttonSearch} >
+              Buscar usuários
+            </button>
 
             <br />
 
@@ -80,7 +76,9 @@ const Home = () => {
             <br /><br />
 
             <h2 className={styles.h2}>Lista de Usuários</h2>
-            <button onClick={handleFetchUserById} className={styles.buttonSearchById}>Buscar usuário pelo ID</button>            
+            <button onClick={handleFetchUserById} className={styles.buttonSearchById}>
+              Buscar usuário pelo ID 5
+            </button> 
 
             {!loading && userById && (
               <div style={{ marginTop: '12px' }}>

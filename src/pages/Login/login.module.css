@@ -57,14 +57,20 @@
   background-color: #229e0c;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .main {
     width: 90%;
     padding: 12px;
   }
 
+  .title {
+    font-size: 1.5rem;   
+    text-align: center;
+  }
+
   .form {
     width: 100%;
+    gap: 12px;             
   }
 
   .input {
@@ -77,9 +83,23 @@
     font-size: 16px;
     height: 42px;
   }
+}
 
+/* =========================
+   Para telas muito pequenas
+   ========================= */
+@media (max-width: 360px) {
   .title {
-    font-size: 22px;
-    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .input {
+    font-size: 13px;
+    height: 38px;
+  }
+
+  .form button {
+    font-size: 14px;
+    height: 40px;
   }
 }

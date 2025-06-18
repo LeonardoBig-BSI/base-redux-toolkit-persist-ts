@@ -65,7 +65,7 @@
 }
 
 .buttonSearchById {
-  width: 20%;
+  width: 25%;
   height: 40px;
   margin-top: 8px;
   border-radius: 8px;
@@ -114,5 +114,75 @@
     width: 80%; 
     height: 50px;  
     font-size: 18px;
+  }
+}
+
+/* =========================
+   Ajustes para tablet e mobile (menor ou igual a 768px)
+   ========================= */
+@media (max-width: 768px) {
+  /* Container centralizado com menos padding lateral */
+  .container {
+    padding: 0 8px;
+  }
+
+  /* A “message” ocupa 100% e centraliza melhor */
+  .message {
+    margin: 0;
+    padding: 12px;
+  }
+
+  /* Títulos menores */
+  .title {
+    font-size: 1.5rem;
+  }
+  .h2 {
+    font-size: 1.25rem;
+  }
+
+  /* Nav vira coluna se não couber em linha */
+  .nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .link {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 6px 12px;
+  }
+
+  /* Address passa para coluna */
+  .address {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .address button {
+    margin-left: 0;
+  }
+
+  /* Botões de busca maiores e full‑width */
+  .buttonSearch,
+  .buttonSearchById {
+    width: 100%;
+    font-size: 1rem;
+    height: 44px;
+  }
+}
+
+/* =========================
+   Ajustes para telas muito pequenas (menor ou igual a 360px)
+   ========================= */
+@media (max-width: 360px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .h2 {
+    font-size: 1.1rem;
+  }
+  .buttonSearch,
+  .buttonSearchById {
+    font-size: 0.9rem;
+    height: 40px;
   }
 }
