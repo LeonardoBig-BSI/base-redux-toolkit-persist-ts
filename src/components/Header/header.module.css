@@ -1,11 +1,13 @@
 
 header{
   width: 100%;
-  background: #FFF;
+  margin-bottom: 24px;
+  background: #000;
   height: 70px;
   display: flex;
   align-items: center;
   padding: 0 8px;
+  box-shadow: 0 0 10px 2px #222;
 }
 
 .content{

@@ -64,7 +64,7 @@ const Home = () => {
               </>
             )}
 
-            {/* <hr /> <br /> */}
+            <br /><br /> <hr /> 
 
             <h2 className={styles.h2}>Lista de Usuários</h2>
             <button onClick={handleFetchUsers} className={styles.buttonSearch} >Buscar usuários</button>
@@ -77,6 +77,9 @@ const Home = () => {
               </div>
             ))}
 
+            <br /><br />
+
+            <h2 className={styles.h2}>Lista de Usuários</h2>
             <button onClick={handleFetchUserById} className={styles.buttonSearchById}>Buscar usuário pelo ID</button>            
 
             {!loading && userById && (

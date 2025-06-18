@@ -23,7 +23,7 @@ const Header = () => {
     <header>
         <div className={styles.content}>
             <Link to="/panel">
-                <h1>Dev<span>Redux</span></h1>
+                <h1 style={{ color: '#229e0c' }}>Dev<span>Redux</span></h1>
             </Link>
 
             {user ? (

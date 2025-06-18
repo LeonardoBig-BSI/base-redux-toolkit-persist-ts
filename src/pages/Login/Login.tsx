@@ -36,7 +36,9 @@ const Login = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <Link to="/panel">
-          <h1 className={styles.title}>Dev Login</h1>
+          <h1 className={styles.title}>
+            Dev <span style={{ color: '#FFF' }}>Login</span>
+          </h1>
         </Link>
 
         <form onSubmit={handleLogin} className={styles.form}>
